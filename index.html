@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saat Farkı Hesaplama</title>
+	<link rel="icon" href="img/favicon-32x32.png" sizes="32x32">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+        .container {
+            width: 100%;
+            max-width: 800px;
+            margin: auto;
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            border: 2px solid #dfdbdb;
+        }
+        .form-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: 600;
+            font-size: 13px;
+            color: #555;
+        }
+        input[type="datetime-local"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+            font-size: 16px;
+        }
+        button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            font-size: 18px;
+            color: #fff;
+            background-color: #de3333;
+            border-radius: 4px;
+            border: none;
+            cursor: pointer;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+            background-color: #c72727;
+        }
+        .result {
+            margin-top: 20px;
+        }
+        .result p {
+            font-size: 16px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Saat Farkı Hesaplama</h1>
+        <form id="timeForm" onsubmit="return calculateTime(event)">
+            <div class="form-group">
+                <label for="startDate">Başlangıç Tarihi:</label>
+                <input type="datetime-local" id="startDate" name="startDate" required>
+            </div>
+            <div class="form-group">
+                <label for="endDate">Bitiş Tarihi:</label>
+                <input type="datetime-local" id="endDate" name="endDate" required>
+            </div>
+            <button type="submit">Hesapla</button>
+        </form>
+
+        <div id="result" class="result"></div>
+		<br />
+		<h1>Saat Farkı Hesaplama</h1><p>Yılın her döneminde seyahat eden, uzaktaki sevdiklerini ziyaret eden veya yurt dışında çalışan birçok kişi için saat farkı hesaplama önemli bir konu haline gelir. Farklı zaman dilimlerinde yaşayan insanlar, bazen bir telefon görüşmesi yapmak ya da bir toplantıya katılmak için doğru zamanı bulmakta zorlanabilir. Bu yazıda, saat farkını nasıl kolay bir şekilde hesaplayabileceğinizi ve bu hesaplamanın günlük yaşamınıza katkılarını keşfedeceksiniz. Ayrıca, zaman dilimleriyle ilgili bilinmesi gereken püf noktalarına da değineceğiz. Hazırsanız, bu zamansal yolculuğa birlikte çıkalım!</p><h2>Saat Farkı Nedir ve Neden Önemlidir?</h2><p>Saat farkı, dünya üzerindeki farklı coğrafi bölgelerde, yerel saatlerin zaman dilimlerine göre değişimidir. Bu durum, özellikle uluslararası işlerde, seyahatlerde ve iletişimde oldukça önemlidir. Örneğin, Türkiye ile New York arasında 7 saatlik bir fark bulunurken, bu fark iş yapma saatlerinde kafa karışıklığına yol açabilir. Dolayısıyla, saat farkını bilmek, zaman yönetimini kolaylaştırır.</p><ol>
+    <li>Kurumsal İletişim: Farklı zaman dilimlerinde yer alan ofisler arasındaki iletişimi düzenler.</li>
+    <li>Yolculuk Planlaması: Ulaşım saatlerini daha verimli bir şekilde organize etmeye yardımcı olur.</li>
+    <li>Etkinlik Yönetimi: Global etkinliklerin tarih ve saatlerinin belirlenmesinde kritik öneme sahiptir.</li>
+</ol><h2>Zaman Dilimleri: Dünyanın Farklı Bölümlerinde Saat Hesaplama</h2><p>Zaman dilimleri, dünya üzerindeki farklı bölgelerde saat hesaplamasında önemli bir rol oynar. Her ülke, kendi coğrafi konumuna bağlı olarak belirli bir zaman dilimine sahiptir. Bu nedenle, bir yerin saati ile başka bir yerin saati arasında ciddi farklar olabilir. Örneğin, New York ile Tokyo arasında tam 14 saatlik bir fark bulunmaktadır. Bu durum, uluslararası iletişim ve seyahat planlaması açısından kafa karıştırıcı olabilir. Zaman dilimlerine alışmak, globalleşen dünyamızda kritik bir beceri haline geliyor.</p><h2>Yaz Saati Uygulaması ve Saat Farkının Hesaplanması</h2><p>Yaz saati uygulaması, gün ışığından daha fazla faydalanmak için saatlerin bir saat ileri alınmasıdır. Bu uygulama ülkeden ülkeye değişiklik gösterir. Örneğin, Türkiye'de yaz saati uygulaması her yıl Mart ayında başlar ve Ekim ayında sona erer. Saat farkı hesaplanırken, uygulamanın başladığı ve bittiği tarihler dikkate alınır. Ancak bazı ülkeler bu uygulamayı hiç yapmıyor. Dolayısıyla, uluslararası seyahatlerde zaman farkları kafa karıştırıcı hale gelebilir.</p><h2>Saat Farkı Hesaplama Yöntemleri: Pratik ve Online Araçlar</h2><p>Saat farkı hesaplama, uluslararası seyahatlerde veya iş görüşmelerinde oldukça önemlidir. Farklı bölgelerdeki saat dilimleri, zamanlama hatalarına yol açabilir. Neyse ki, saat farkını hesaplamak artık çok da zor değil. İşte bu konuda size yardımcı olacak bazı yöntemler:</p><ol>
+  <li>Manuel Hesaplama: Zaman dilimlerini öğrenerek farkı hesaplayabilirsiniz. Ancak, dikkatli olmak gerek; yaz saati uygulamaları kafa karıştırıcı olabilir.</li>
+  <li>Online Araçlar: İnternette bulunan çeşitli saat farkı hesaplama siteleri, hızlı bir şekilde sonuç verir. Bu araçlar genellikle kullanıcı dostudur.</li>
+  <li>Mobil Uygulamalar: Akıllı telefonlar için tasarlanmış uygulamalar, anlık olarak saat farkını gösterir, böylece her an güncel kalmanızı sağlar.</li>
+</ol><p>Bu yöntemlerle, planlarınızı daha kolay organize edebilirsiniz. Unutmayın ki, zaman yönetimi başarının anahtarıdır.</p><h2>Globalleşen Dünyada Zaman Yönetimi ve Saat Farkının Rolü</h2><p>Globalleşen dünyada zaman yönetimi, bireylerin ve organizasyonların başarıları açısından kritik bir öneme sahip. Saat farkları, uluslararası iş ilişkilerinde zorluklar yaratabiliyor. Örneğin, bir toplantı planlarken farklı kıtalardaki iş arkadaşlarınızın programlarını göz önünde bulundurmalısınız. Ancak, bu durum aynı zamanda esneklik ve uyum geliştirme fırsatlarını da beraberinde getiriyor. Zamanın etkin kullanımı, sadece iş hayatında değil, kişisel yaşamda da denge sağlamada hayati rol oynar. Bu dengeyi kurabilmek için, saat dilimlerini anlamak ve uygun stratejiler geliştirmek önemlidir.</p><h2 style="text-align:center;">Sıkça Sorulan Sorular</h2><h3>Saat farkı nedir?</h3><p> </p><p>Saat farkı, farklı coğrafi bölgelerdeki saatlerin birbirine olan zaman farkını ifade eder. Genellikle saat dilimleriyle belirlenir.</p><h3>Saat farkını nasıl hesaplayabilirim?</h3><p> </p><p>Saat farkını hesaplamak için, iki farklı saat dilimindeki saatleri karşılaştırarak aralarındaki saat farkını bulabilirsiniz. Örneğin, bir yer GMT+3 saat diliminde ise, diğeri GMT+1 saat diliminde ise arada 2 saat fark vardır.</p><h3>Saat farkı neden önemlidir?</h3><p> </p><p>Saat farkı, uluslararası işlemler, seyahatler ve iletişimlerde zaman uyumu sağlamak açısından büyük önem taşır. Özellikle iş yaparken veya randevu ayarlarken doğru zamanlamayı yapmak gerekir.</p><h3>Seyahat ederken saat farkını nasıl ayarlamalıyım?</h3><p> </p><p>Seyahat ederken varış noktasındaki saat dilimine göre saatinizi ayarlamanız gerekmektedir. Uçuşunuzu ve varış saatlerinizi kontrol ederek, saat farkını hesaplayabilir ve buna göre ayarlamalar yapabilirsiniz.</p><h3>Saat dilimleri neden farklılık gösterir?</h3><p> </p><p>Saat dilimleri, Dünya'nın döngüsü ve coğrafi konumlardan ötürü farklılık gösterir. Ülkeler, kendi yerel zamanlarını belirleyerek saat dilimlerini oluşturur ve bu nedenle farklı bölgelerde farklı saatler kullanılır.</p>
+    </div>
+
+    <script>
+        function calculateTime(event) {
+            event.preventDefault(); // Formun varsayılan davranışını engelle
+
+            const startDateInput = document.getElementById('startDate').value;
+            const endDateInput = document.getElementById('endDate').value;
+
+            // Boşluk kontrolü ve tarihlerin geçerliliği
+            if (!startDateInput || !endDateInput) {
+                alert('Lütfen tüm alanları doldurun.');
+                return false;
+            }
+
+            const startDate = new Date(startDateInput);
+            const endDate = new Date(endDateInput);
+
+            if (endDate < startDate) {
+                alert('Bitiş tarihi başlangıç tarihinden önce olamaz.');
+                return false;
+            }
+
+            const diff = endDate - startDate; // Milisaniye cinsinden fark
+
+            const seconds = Math.floor(diff / 1000);
+            const minutes = Math.floor(seconds / 60);
+            const hours = Math.floor(minutes / 60);
+            const days = Math.floor(hours / 24);
+
+            const totalHours = hours;
+            const totalMinutes = minutes;
+            const totalSeconds = seconds;
+
+            const result = `
+                <p>Süre : ${days} gün ${hours % 24} saat ${minutes % 60} dakika</p>
+                <p>Saat : ${totalHours.toLocaleString('tr-TR')} saat</p>
+                <p>Dakika : ${totalMinutes.toLocaleString('tr-TR')} dakika</p>
+                <p>Saniye : ${totalSeconds.toLocaleString('tr-TR')} saniye</p>
+            `;
+
+            document.getElementById('result').innerHTML = result;
+            return false; // Formun sayfayı yeniden yüklemesini engelle
+        }
+    </script>
+</body>
+</html>
